@@ -1,0 +1,62 @@
+# The GBCU licence prohibits redistribution of the dataset in whole or in part.
+# This includes images, annotations, split files, and generated manifests.
+GBCU/
+
+# Local data-audit artefacts may contain restricted medical images or labels.
+similarity_review*/
+data_audit/
+
+# Experiment outputs, logs, and scheduler artifacts
+outputs/
+logs/
+slurm-*.out
+slurm-*.err
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+
+# Local backups and generated working data
+.codex_backups/
+generated_yolo_data/
+runs/
+report/
+dissertation/
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Notebook and editor caches
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS and temporary files
+.DS_Store
+*.tmp
+*.swp
+*.swo
+
+# Secrets and local environment settings
+.env
+.env.*
+*.pem
+*.key
+
+# Coverage and packaging artefacts
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
